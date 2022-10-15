@@ -9,7 +9,7 @@ let error = document.querySelector('.error');
 
 let render = (array, node) => {
     node.innerHTML = "";
-    localStorage.setItem('list', JSON.stringify(array));
+    // localStorage.setItem('list', JSON.stringify(array));
     array.forEach(element => {
         let item = document.createElement('li');
         let boxs = document.createElement('div')
@@ -68,4 +68,4 @@ elForm.addEventListener('submit', (e) => {
 })
 
 
-render(JSON.parse(window.localStorage.getItem("list")) || arraySearch, elList)
+// render(JSON.parse(window.localStorage.getItem("list")) || arraySearch, elList)
