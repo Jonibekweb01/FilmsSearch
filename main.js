@@ -58,7 +58,8 @@ elForm.addEventListener('submit', (e) => {
             let arraySearch = data.Search;
             if (inputVal.length < 3) {
                 let errorRes = document.createElement('span');
-                errorRes.textContent = "Bu turdagi ma'lumot mavjud emas";
+                errorRes.textContent = "Bu turdagi ma'lumot mavjud emas ❌";
+                errorRes.classList.add('errorSpan');
                 error.appendChild(errorRes);
             }
             render(arraySearch, elList);
