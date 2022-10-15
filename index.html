@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <title>Documen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Films</title>
 </head>
+
 <body>
-  <h1>Hello World</h1>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__imgLink" href="./index.html">
+                    <img class="header__img" src="./image/fims-img.png" alt="Films img" width="300" height="100">
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav__itemSearch">
+                            <form class="form-js form" method="post">
+                                <input type="text" class="search-js header__inp" placeholder="Search Film  .  .  .">
+                                <button type="submit" class="btn-js header__btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="form-js form form-media" method="post">
+                    <input type="text" class="search-js header__inp" placeholder="Search Film  .  .  .">
+                    <button type="submit" class="btn-js header__btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="results">
+            <div class="container">
+                <div class="results__inner">
+                    <ul class="list">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="error">
+
+    </div> -->
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/faae89cb0b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

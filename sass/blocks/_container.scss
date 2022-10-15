@@ -1,4 +1,12 @@
 .container {
-    padding:0 20px;
-    margin:0 auto;
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 565px) {
+  .container {
+    padding: 0 10px;
+  }
 }

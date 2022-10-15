@@ -1,0 +1,152 @@
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin: 0 0 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  transition: 0.3s ease;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.header__inp {
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.94;
+  }
+
+  &::placeholder {
+    color: black;
+  }
+}
+
+.header__btn {
+  padding: 11px 15px 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.4s ease;
+
+  &:hover {
+    opacity: 0.94;
+  }
+}
+
+.nav__link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.form-media {
+  display: none !important;
+}
+
+.title {
+  color: #fff !important;
+}
+
+.box-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  max-width: 250px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.boxs {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 565px) {
+  .header__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .form-media {
+    display: flex !important;
+    margin-bottom: 50px;
+  }
+  .header__inp {
+    padding: 20px 50px 20px 24px;
+    font-size: 22px;
+
+    &::placeholder {
+      font-size: 28px;
+    }
+  }
+
+  .header__btn {
+    padding: 11px 25px 10px 25px;
+    font-size: 30px;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+}
