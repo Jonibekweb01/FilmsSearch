@@ -10,6 +10,7 @@ let error = document.querySelector('.error');
 let render = (array, node) => {
     node.innerHTML = "";
     localStorage.setItem('list', JSON.stringify(array));
+    errorRes.textContent = "";
     array.forEach(element => {
         let item = document.createElement('li');
         let boxs = document.createElement('div')
@@ -65,5 +66,6 @@ elForm.addEventListener('submit', (e) => {
             render(arraySearch, elList);
         })
 })
+
 
 render(JSON.parse(window.localStorage.getItem("list")), elList)
