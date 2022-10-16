@@ -68,4 +68,4 @@ elForm.addEventListener('submit', (e) => {
 })
 
 
-// render(JSON.parse(window.localStorage.getItem("list")) || arraySearch, elList)
+render(arraySearch, elList)
